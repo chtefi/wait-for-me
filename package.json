@@ -1,6 +1,6 @@
 {
   "name": "wait-for-me",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns a function you can await for (promisify), from a function which signature is (args..., err)",
   "main": "lib/index.js",
   "scripts": {
