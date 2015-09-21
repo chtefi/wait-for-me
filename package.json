@@ -3,6 +3,15 @@
   "version": "1.0.1",
   "description": "Returns a function you can await for (promisify), from a function which signature is (args..., err)",
   "main": "lib/index.js",
+  "keywords": [
+    "promise",
+    "promisify",
+    "async",
+    "await",
+    "then",
+    "callback",
+    "hell"
+  ],
   "scripts": {
     "clean": "rimraf lib dist",
     "build": "babel index.js --out-dir lib",
