@@ -3,11 +3,11 @@
 
 ## Why
 
-Most async functions of nodejs framework have this signature ([fs](https://nodejs.org/api/fs.html#fs_fs_readfile_filename_options_callback)
-, or databases such [mongo](http://mongodb.github.io/node-mongodb-native/2.0/api/) or [NeDB](https://github.com/louischatriot/nedb)).
+Most async functions of nodejs framework have this signature ([nodejs fs](https://nodejs.org/api/fs.html#fs_fs_readfile_filename_options_callback),
+or databases such [mongo](http://mongodb.github.io/node-mongodb-native/2.0/api/) or [NeDB](https://github.com/louischatriot/nedb)).
 
 When you start coding some async stuff without Promises (because the function 
-does not handle it and just have a callback as argument), you end up with a lot
+does not handle it and just has a callback as argument), you end up with a lot
 of callbacks inside others callbacks, a lot of `if` to handle the arguments
 `(err, result)`, a lot of repetitions, a lot of indentations, and the code is
 just ugly, let's face it.
@@ -91,12 +91,13 @@ natively.
 
 ## Origin
 
-I started a project with callbacks hell, then wanted to promisify them instead.
-Few days before, I saw a conversation about that involving [@RReverser](https://twitter.com/RReverser)
+I started a project with some callbacks hell, then wanted to promisify some
+functions because it was ugly.
+Few days before, I saw a conversation about this topic, involving [@RReverser](https://twitter.com/RReverser)
 who suggests this [approach](https://gist.github.com/RReverser/79afe3bfacbe054264d6).
 
 I really liked it, very clean code. I just added the context option for me but 
-all credits goes to him.
+all credits go to him.
 
 You can find other projects promisifying function but I found them more
 complicated, doing more stuff, having polyfill or other thing I didn't want.
